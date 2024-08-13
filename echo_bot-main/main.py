@@ -19,7 +19,6 @@ async def main():
 
     format = '%(filename)s:%(lineno)d #%(levelname)-8s [%(asctime)s] - %(name)s - %(message)s'
     logging.basicConfig(level=logging.INFO, format=format)
-
     await tg_bot.delete_webhook()
     await dp.start_polling(tg_bot)
 
